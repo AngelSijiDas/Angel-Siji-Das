@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Angel Siji Das</title>
+  <meta name="description" content="Get in touch with Angel Siji Das for animation freelance inquiries." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav id="navbar">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Angel Logo" class="nav-logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-text" style="display:none; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.6rem; color:var(--cream);">Angel</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="page-hero">
+    <p class="page-hero-label">✦ Say Hello</p>
+    <h1>Let's <em>Connect</em></h1>
+  </section>
+
+  <!-- ══ CONTACT LAYOUT ══ -->
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <!-- Left: Info -->
+      <div class="contact-info reveal-left">
+        <p class="section-label">Get In Touch</p>
+        <h2>Ready to work<br /><em>together?</em></h2>
+        <p class="contact-sub">
+          Whether you have a brief ready or just a rough idea — I'd love to hear from you.
+          Drop a message and I'll get back within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="cd-icon">✉</span>
+            <div>
+              <span class="cd-label">Email</span>
+              <!-- REPLACE: update with real email -->
+              <a href="mailto:angel@example.com" class="cd-value">angel@example.com</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="cd-icon">🌍</span>
+            <div>
+              <span class="cd-label">Location</span>
+              <span class="cd-value">India — Available Worldwide</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="cd-icon">⏱</span>
+            <div>
+              <span class="cd-label">Response Time</span>
+              <span class="cd-value">Within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-platforms">
+          <p class="section-label" style="margin-bottom:1.2rem">Find Me On</p>
+          <!-- REPLACE: update href values with real profile links -->
+          <div class="platform-links">
+            <a href="https://www.behance.net/angelsijidas" target="_blank" class="platform-link">
+              <span class="pl-name">Behance</span>
+              <span class="pl-arrow">↗</span>
+            </a>
+            <a href="https://www.youtube.com/@Angelsdas" target="_blank" class="platform-link">
+              <span class="pl-name">YouTube</span>
+              <span class="pl-arrow">↗</span>
+            </a>
+            <a href="https://www.instagram.com/always__angel/" target="_blank" class="platform-link">
+              <span class="pl-name">Instagram</span>
+              <span class="pl-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="platform-link">
+              <span class="pl-name">LinkedIn</span>
+              <span class="pl-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap reveal-right">
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service…</option>
+              <option value="2d-animation">2D Character Animation</option>
+              <option value="lip-sync">Lip Sync Animation</option>
+              <option value="storyboard">Storyboarding</option>
+              <option value="motion-graphics">Motion Graphics / Product Ad</option>
+              <option value="logo-banner">Logo & Banner Design</option>
+              <option value="other">Other / Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="budget">Budget Range (USD)</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select budget…</option>
+              <option value="under-100">Under $100</option>
+              <option value="100-300">$100 – $300</option>
+              <option value="300-600">$300 – $600</option>
+              <option value="600-plus">$600+</option>
+              <option value="discuss">Let's Discuss</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Tell me about your project — what you need, your timeline, and any references you love…"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <!-- Success message (hidden by default) -->
+          <div class="form-success" id="formSuccess">
+            <span>✦</span>
+            <p>Message sent! I'll be in touch within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Angel"
+             onerror="this.outerHTML='<p style=\'font-family:Cormorant Garamond,serif;font-style:italic;font-size:1.8rem;color:var(--cream);margin-bottom:1.2rem;\'>Angel</p>'" />
+        <p>Crafting stories one frame<br />at a time — available worldwide<br />for freelance projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Platforms</h4>
+        <ul>
+          <li><a href="https://www.behance.net/angelsijidas" target="_blank">Behance</a></li>
+          <li><a href="https://www.youtube.com/@Angelsdas" target="_blank">YouTube</a></li>
+          <li><a href="https://www.instagram.com/always__angel/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:angel@example.com">angel@example.com</a></li>
+          <li><a href="contact.html">Work Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Angel Siji Das. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.behance.net/angelsijidas" target="_blank">Behance</a>
+        <a href="https://www.youtube.com/@Angelsdas" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/always__angel/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

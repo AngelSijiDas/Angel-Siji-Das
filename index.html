@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Siji Das — 2D Animation Artist</title>
+  <meta name="description" content="Angel Siji Das — First year animation student specialising in 2D animation, lip sync, character design and storyboarding." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- REPLACE: update favicon href below -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <!-- REPLACE: update src to your logo file path -->
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Angel Logo" class="nav-logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-text" style="display:none; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.6rem; color:var(--cream);">Angel</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg-lines"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">
+        <span class="star">✦</span> Animation Artist &amp; Storyteller
+      </p>
+
+      <h1 class="hero-title">
+        <span class="line reveal" style="transition-delay:0.15s">Bringing</span>
+        <span class="line line-italic reveal" style="transition-delay:0.3s">Characters</span>
+        <span class="line reveal" style="transition-delay:0.45s">to Life</span>
+      </h1>
+
+      <p class="hero-sub reveal" style="transition-delay:0.6s">
+        First-year animation student specialising in 2D animation,<br />
+        lip sync, character design &amp; storyboarding.
+      </p>
+
+      <div class="hero-actions reveal" style="transition-delay:0.75s">
+        <a href="portfolio.html" class="btn-primary"><span>View Portfolio</span></a>
+        <a href="about.html" class="btn-outline">About Me</a>
+      </div>
+    </div>
+
+    <!-- Hero portrait (uses your "me foto" image) -->
+    <div class="hero-emblem reveal-right" style="transition-delay:0.3s">
+      <img src="assets/images/angel-photo.jpg" alt="Angel portrait"
+           onerror="this.outerHTML='<div class=\'hero-emblem-fallback\'>✦</div>'" />
+      <div class="emblem-glow"></div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MARQUEE TICKER
+  ══════════════════════════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>2D Animation</span>
+      <span class="star-sep">✦</span>
+      <span>Lip Sync</span>
+      <span class="star-sep">✦</span>
+      <span>Character Design</span>
+      <span class="star-sep">✦</span>
+      <span>Storyboarding</span>
+      <span class="star-sep">✦</span>
+      <span>After Effects</span>
+      <span class="star-sep">✦</span>
+      <span>Product Ads</span>
+      <span class="star-sep">✦</span>
+      <span>Motion Graphics</span>
+      <span class="star-sep">✦</span>
+      <span>2D Animation</span>
+      <span class="star-sep">✦</span>
+      <span>Lip Sync</span>
+      <span class="star-sep">✦</span>
+      <span>Character Design</span>
+      <span class="star-sep">✦</span>
+      <span>Storyboarding</span>
+      <span class="star-sep">✦</span>
+      <span>After Effects</span>
+      <span class="star-sep">✦</span>
+      <span>Product Ads</span>
+      <span class="star-sep">✦</span>
+      <span>Motion Graphics</span>
+      <span class="star-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT INTRO
+  ══════════════════════════════════════ -->
+  <section class="intro-section">
+    <div class="intro-inner">
+      <div class="intro-text reveal-left">
+        <p class="section-label">Who I Am</p>
+        <h2>A passion for <em>frame-by-frame</em> storytelling</h2>
+        <p>
+          Hi, I'm Angel Siji Das — a first-year animation student deeply in love with
+          the art of 2D animation. Every frame I draw is a chance to breathe life into
+          a character and connect with an audience across the world.
+        </p>
+        <p>
+          From hand-crafted lip sync animations to cinematic storyboards, I blend
+          traditional animation principles with modern digital tools to create work
+          that feels genuinely alive.
+        </p>
+        <a href="about.html" class="btn-outline" style="margin-top:2rem;">Learn More</a>
+      </div>
+
+      <div class="intro-stats reveal-right">
+        <div class="stat-card">
+          <span class="stat-num">2D</span>
+          <span class="stat-label">Specialist</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Frames of Passion</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Year of Growth</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FEATURED WORK
+  ══════════════════════════════════════ -->
+  <section class="featured-section">
+    <div class="featured-header reveal">
+      <p class="section-label">Selected Work</p>
+      <h2>Featured <em>Projects</em></h2>
+    </div>
+
+    <div class="featured-grid">
+
+      <!-- CARD 1: Lip Sync (Behance) -->
+      <article class="work-card work-card--large reveal" style="transition-delay:0.1s">
+        <div class="card-media">
+          <img src="assets/images/lipsync-thumb.jpg" alt="Lip Sync Animation Thumbnail"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="card-placeholder" style="background: linear-gradient(135deg, #1A3A0E 0%, #2D5A1B 100%); display:none;">
+            <div class="placeholder-icon">🎭</div>
+          </div>
+          <div class="card-overlay">
+            <a href="https://www.behance.net/gallery/241260665/lipsync-animation" target="_blank" class="card-link-btn">
+              View on Behance ↗
+            </a>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-tag">Lip Sync · Behance</span>
+          <h3>Dialogue Lip Sync Animation</h3>
+          <p>A frame-by-frame 2D lip sync piece exploring phoneme accuracy and expressive character performance.</p>
+        </div>
+      </article>
+
+      <!-- CARD 2: Product Ad (YouTube) -->
+      <article class="work-card reveal" style="transition-delay:0.2s">
+        <div class="card-media">
+          <img src="https://i.ytimg.com/vi/5SAM76MOOUU/hqdefault.jpg" alt="Product Commercial Thumbnail"
+               onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='assets/images/product-ad-thumb.jpg';return;}this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="card-placeholder" style="background: linear-gradient(135deg, #2D5A1B 0%, #3D7A25 100%); display:none;">
+            <div class="placeholder-icon">📦</div>
+          </div>
+          <div class="card-overlay">
+            <a href="https://www.youtube.com/watch?v=5SAM76MOOUU" target="_blank" class="card-link-btn">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-tag">After Effects · YouTube</span>
+          <h3>Product Commercial</h3>
+          <p>A polished product advertisement crafted in Adobe After Effects with motion graphics.</p>
+        </div>
+      </article>
+
+      <!-- CARD 3: Storyboard 1 -->
+      <article class="work-card reveal" style="transition-delay:0.3s">
+        <div class="card-media">
+          <img src="assets/images/storyboard-01-thumb.jpg" alt="Storyboard Scene I Thumbnail"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="card-placeholder" style="background: linear-gradient(135deg, #1A3A0E 0%, #3D7A25 60%); display:none;">
+            <div class="placeholder-icon">📋</div>
+          </div>
+          <div class="card-overlay">
+            <a href="https://portfolio.adobe.com/e9164782-c2e6-408b-b7de-a1a128b94384/editor/sunflower-storyboard" target="_blank" class="card-link-btn">
+              View Storyboard ↗
+            </a>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-tag">Storyboard · Behance</span>
+          <h3>Storyboard — Scene I</h3>
+          <p>A sequential visual narrative storyboard mapping out camera angles, emotion and timing.</p>
+        </div>
+      </article>
+
+      <!-- CARD 4: Storyboard 2 -->
+      <article class="work-card reveal" style="transition-delay:0.4s">
+        <div class="card-media">
+          <img src="assets/images/storyboard-02-thumb.jpg" alt="Storyboard Scene II Thumbnail"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="card-placeholder" style="background: linear-gradient(135deg, #3D7A25 0%, #1A3A0E 100%); display:none;">
+            <div class="placeholder-icon">🎬</div>
+          </div>
+          <div class="card-overlay">
+            <a href="https://www.behance.net/gallery/238531321/Writers-wall-%28Script-and-Storyboard%29" target="_blank" class="card-link-btn">
+              View on Behance ↗
+            </a>
+          </div>
+        </div>
+        <div class="card-info">
+          <span class="card-tag">Storyboard · Behance</span>
+          <h3>Storyboard — Scene II</h3>
+          <p>An action-driven storyboard sequence with dynamic compositions and clear panel storytelling.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="featured-cta reveal">
+      <a href="portfolio.html" class="btn-primary"><span>See All Work</span></a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COLLAGE / BRANDING STRIP
+  ══════════════════════════════════════ -->
+  <section class="collage-section">
+    <div class="collage-header reveal">
+      <p class="section-label">Branding &amp; Visuals</p>
+      <h2>Logos &amp; <em>Banners</em></h2>
+    </div>
+    <div class="collage-grid">
+      <!--
+        REPLACE: Add real screenshots of logos and banners here.
+        Each .collage-item contains an <img> or a styled placeholder div.
+        Recommended: 6–8 items. Mix portrait and landscape orientations.
+      -->
+      <div class="collage-item reveal" style="transition-delay:0.1s">
+        <div class="collage-placeholder" style="background:linear-gradient(120deg,#1A3A0E,#2D5A1B);">
+          <img src="assets/images/banner-01.jpg" alt="Banner Design"
+               onerror="this.style.display='none'; this.previousElementSibling.style.display='block';" />
+          <span style="display:none;">Banner Design</span>
+        </div>
+      </div>
+      <div class="collage-item reveal" style="transition-delay:0.15s">
+        <div class="collage-placeholder" style="background:linear-gradient(120deg,#2D5A1B,#5C9E3A);">
+          <img src="assets/images/logo-01.jpg" alt="Logo Design"
+               onerror="this.style.display='none'; this.previousElementSibling.style.display='block';" />
+          <span style="display:none;">Logo Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SERVICES TEASER
+  ══════════════════════════════════════ -->
+  <section class="services-teaser">
+    <div class="services-teaser-header reveal">
+      <p class="section-label">What I Offer</p>
+      <h2>Services for <em>creative</em> clients</h2>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal" style="transition-delay:0.1s">
+        <div class="svc-icon">🎭</div>
+        <h3>2D Animation</h3>
+        <p>Frame-by-frame character animation with expressive movement and fluid timing.</p>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.2s">
+        <div class="svc-icon">🔊</div>
+        <h3>Lip Sync</h3>
+        <p>Precise phoneme-matched lip sync bringing dialogue to life with authentic emotion.</p>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.3s">
+        <div class="svc-icon">📋</div>
+        <h3>Storyboarding</h3>
+        <p>Clear, cinematic storyboards that pre-visualise your story panel by panel.</p>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.4s">
+        <div class="svc-icon">✨</div>
+        <h3>Motion Graphics</h3>
+        <p>After Effects-powered product ads and kinetic typography for brands.</p>
+      </div>
+    </div>
+    <div class="services-cta reveal">
+      <a href="services.html" class="btn-outline">See All Services</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════ -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner-inner">
+      <p class="section-label">Let's Collaborate</p>
+      <h2>Ready to bring your <em>vision</em> to life?</h2>
+      <a href="contact.html" class="btn-primary" style="margin-top:2.5rem"><span>Get in Touch</span></a>
+    </div>
+    <div class="cta-deco">✦</div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <!-- REPLACE: logo image -->
+        <img src="assets/images/logo.png" alt="Angel"
+             onerror="this.outerHTML='<p style=\'font-family:Cormorant Garamond,serif;font-style:italic;font-size:1.8rem;color:var(--cream);margin-bottom:1.2rem;\'>Angel</p>'" />
+        <p>Crafting stories one frame<br />at a time — available worldwide<br />for freelance projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Platforms</h4>
+        <ul>
+          <!-- REPLACE: update href values with real Behance/YouTube links -->
+          <li><a href="https://www.behance.net/angelsijidas" target="_blank">Behance</a></li>
+          <li><a href="https://www.youtube.com/@Angelsdas" target="_blank">YouTube</a></li>
+          <li><a href="https://www.instagram.com/always__angel/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <!-- REPLACE: update with real contact info -->
+          <li><a href="mailto:angel@example.com">angel@example.com</a></li>
+          <li><a href="contact.html">Work Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Angel Siji Das. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.behance.net/angelsijidas" target="_blank">Behance</a>
+        <a href="https://www.youtube.com/@Angelsdas" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/always__angel/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
